@@ -14,11 +14,13 @@
 
 .top-row[b-tbuslxnufd] {
     background-color: #000000;
-    border-bottom: 1px solid #d6d5d5;
-    justify-content: flex-end;
+    border-bottom: 1px solid #000000;
+    justify-content: flex;
     height: 3.5rem;
     display: flex;
     align-items: center;
+    text-align: left;
+    align-content: left;
 }
 
     .top-row[b-tbuslxnufd]  a, .top-row .btn-link[b-tbuslxnufd] {
@@ -67,4 +69,10 @@
         padding-left: 2rem !important;
         padding-right: 1.5rem !important;
     }
+}
+
+#govBannerHeading[b-tbuslxnufd]{
+    color: #ffffff;
+    text-align: center;
+    
 }
