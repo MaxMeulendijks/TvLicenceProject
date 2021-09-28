@@ -9,6 +9,8 @@ Please enter your user details.
 
 <EditForm Model=@UserInfo>
   <input type="submit" value="Submit" class="btn btn-primary"/>
+  <label for="CourtDivision">Court Division</label>
+  <InputText id="CourtDivision" @bind-Value=User.CourtDivision />
 </EditForm>
 
 @code
@@ -17,7 +19,7 @@ Please enter your user details.
 }
 
 Please Fill out user details:
-<InputText @bind-Value=User.CourtDivision />
+
 <br>
 <br>
 <button class="btn btn-primary" type="submit" value="submit" @onclick=@Navigate>Submit details</button>
