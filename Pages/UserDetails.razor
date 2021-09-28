@@ -8,9 +8,9 @@
 Please enter your user details.
 
 <EditForm Model=@UserInfo>
-  <input type="submit" value="Submit"/>
   <label for="CourtDivision">Court Division</label>
   <InputText id="CourtDivision" @bind-Value=User.CourtDivision />
+  <button class="btn btn-primary" type="submit" value="submit" @onclick=@Navigate>Submit details</button>
 </EditForm>
 
 @code
@@ -22,7 +22,7 @@ Please Fill out user details:
 
 <br>
 <br>
-<button class="btn btn-primary" type="submit" value="submit" @onclick=@Navigate>Submit details</button>
+
 
 @code {
 void Navigate()
