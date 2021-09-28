@@ -1,4 +1,5 @@
 @page "/"
+@inject NavigationManager UriHelper
 
 <h2>Pay a TV Licence Fine</h2>
 
@@ -29,4 +30,11 @@ You can pay online using the court fines service.
 <br>
 <br>
 
-<button class="btn btn-primary" @onclick="location.href='/userdetails'">Start Now</button>
+<button class="btn btn-primary" @onclick=@Navigate>Start Now</button>
+
+@code {
+void Navigate()
+{
+    UriHelper.NavigateTo("userdetails");
+}
+}
