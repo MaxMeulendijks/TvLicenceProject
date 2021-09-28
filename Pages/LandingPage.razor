@@ -29,14 +29,4 @@ You can pay online using the court fines service.
 <br>
 <br>
 
-
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
-
-@code {
-    private int currentCount = 0;
-
-    private void IncrementCount()
-    {
-        currentCount++;
-    }
-}
+<button class="btn btn-primary" @onclick="window.location.href='/userdetails'">Pay Fine</button>
