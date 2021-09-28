@@ -1,4 +1,5 @@
 @page "/paymentconfirmation"
+@inject NavigationManager UriHelper
 
 <h1>Please check you input the right details:</h1>
 <br>
@@ -6,3 +7,11 @@
 <br>
 etc, etc.
 
+<button class="btn btn-primary" @onclick=@Navigate>Pay</button>
+
+@code {
+void Navigate()
+{
+    UriHelper.NavigateTo("paymentreceipt");
+}
+}
