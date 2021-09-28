@@ -11,3 +11,4 @@ namespace TvLicenceProject.Data
         private string PostcodeUser {get; set;}
 
     }
+}
