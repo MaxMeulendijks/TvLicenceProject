@@ -5,14 +5,11 @@
 Please enter your user details.
 <br>
 <br>
-<button class="btn btn-primary" @onclick="IncrementCount">Submit details</button>
+<button class="btn btn-primary" @onclick=@Navigate>Submit details</button>
 
 @code {
-    private int currentCount = 0;
-
-    private void IncrementCount()
-    {
-        currentCount++;
-    }
-    
+void Navigate()
+{
+    UriHelper.NavigateTo("financedetails");
+}
 }
