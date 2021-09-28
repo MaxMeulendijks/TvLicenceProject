@@ -1,6 +1,6 @@
 @page "/"
 
-<h1>Pay a TV Licence Fine</h1>
+<h2>Pay a TV Licence Fine</h2>
 
 You can pay a tv licence fine online or by phone.
 <br>
@@ -30,5 +30,13 @@ You can pay online using the court fines service.
 <br>
 
 
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
-<SurveyPrompt Title="Click here to input your user details." />
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}
