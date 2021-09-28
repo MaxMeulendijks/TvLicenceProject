@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "J:\\Documents\\Code\\TVLicenceProject\\BlazorApp\\TvLicenceProject\\TvLicenceProject.csproj",
+      "projectUniqueName": "J:\\Documents\\Code\\TVLicenceProject\\TvLicenceProject\\TvLicenceProject.csproj",
       "projectName": "TvLicenceProject",
-      "projectPath": "J:\\Documents\\Code\\TVLicenceProject\\BlazorApp\\TvLicenceProject\\TvLicenceProject.csproj",
+      "projectPath": "J:\\Documents\\Code\\TVLicenceProject\\TvLicenceProject\\TvLicenceProject.csproj",
       "packagesPath": "C:\\Users\\Joshu\\.nuget\\packages\\",
-      "outputPath": "J:\\Documents\\Code\\TVLicenceProject\\BlazorApp\\TvLicenceProject\\obj\\",
+      "outputPath": "J:\\Documents\\Code\\TVLicenceProject\\TvLicenceProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

@@ -13,77 +13,77 @@ namespace TvLicenceProject.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "J:\Documents\Code\TVLicenceProject\BlazorApp\TvLicenceProject\_Imports.razor"
+#line 1 "J:\Documents\Code\TVLicenceProject\TvLicenceProject\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "J:\Documents\Code\TVLicenceProject\BlazorApp\TvLicenceProject\_Imports.razor"
+#line 2 "J:\Documents\Code\TVLicenceProject\TvLicenceProject\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "J:\Documents\Code\TVLicenceProject\BlazorApp\TvLicenceProject\_Imports.razor"
+#line 3 "J:\Documents\Code\TVLicenceProject\TvLicenceProject\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "J:\Documents\Code\TVLicenceProject\BlazorApp\TvLicenceProject\_Imports.razor"
+#line 4 "J:\Documents\Code\TVLicenceProject\TvLicenceProject\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "J:\Documents\Code\TVLicenceProject\BlazorApp\TvLicenceProject\_Imports.razor"
+#line 5 "J:\Documents\Code\TVLicenceProject\TvLicenceProject\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "J:\Documents\Code\TVLicenceProject\BlazorApp\TvLicenceProject\_Imports.razor"
+#line 6 "J:\Documents\Code\TVLicenceProject\TvLicenceProject\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "J:\Documents\Code\TVLicenceProject\BlazorApp\TvLicenceProject\_Imports.razor"
+#line 7 "J:\Documents\Code\TVLicenceProject\TvLicenceProject\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "J:\Documents\Code\TVLicenceProject\BlazorApp\TvLicenceProject\_Imports.razor"
+#line 8 "J:\Documents\Code\TVLicenceProject\TvLicenceProject\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "J:\Documents\Code\TVLicenceProject\BlazorApp\TvLicenceProject\_Imports.razor"
+#line 9 "J:\Documents\Code\TVLicenceProject\TvLicenceProject\_Imports.razor"
 using TvLicenceProject;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "J:\Documents\Code\TVLicenceProject\BlazorApp\TvLicenceProject\_Imports.razor"
+#line 10 "J:\Documents\Code\TVLicenceProject\TvLicenceProject\_Imports.razor"
 using TvLicenceProject.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "J:\Documents\Code\TVLicenceProject\BlazorApp\TvLicenceProject\Pages\FetchData.razor"
+#line 3 "J:\Documents\Code\TVLicenceProject\TvLicenceProject\Pages\FetchData.razor"
 using TvLicenceProject.Data;
 
 #line default
@@ -98,7 +98,7 @@ using TvLicenceProject.Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 39 "J:\Documents\Code\TVLicenceProject\BlazorApp\TvLicenceProject\Pages\FetchData.razor"
+#line 39 "J:\Documents\Code\TVLicenceProject\TvLicenceProject\Pages\FetchData.razor"
        
     private WeatherForecast[] forecasts;
 
