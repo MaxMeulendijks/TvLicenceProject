@@ -1,5 +1,5 @@
 using System;
-using System.Collections.IList;
+using System.Collections.Generic;
 
 namespace TvLicenceProject.Data
 {
@@ -7,7 +7,7 @@ namespace TvLicenceProject.Data
     {
             public int CheckPresence (UserInfo User)
             {
-                ArrayList<UserInfo> DataEntries = new ArrayList<UserInfo>();
+                List<UserInfo> DataEntries = new List<UserInfo>();
 
                 UserInfo Emily = new UserInfo();
                 Emily.CourtDivision = "C1";
