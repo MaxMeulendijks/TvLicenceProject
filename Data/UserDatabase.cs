@@ -49,7 +49,7 @@ namespace TvLicenceProject.Data
             
         }
         
-        public GetHashCode (UserInfo u1)
+        public int GetHashCode (UserInfo u1)
         {
             return u1.CourtDivision.GetHashCode();
         }
