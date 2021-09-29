@@ -82,6 +82,13 @@ using TvLicenceProject.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "J:\Documents\Code\TVLicenceProject\TvLicenceProject\Pages\FinanceDetails.razor"
+using TvLicenceProject.Data;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/financedetails")]
     public partial class FinanceDetails : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -91,9 +98,10 @@ using TvLicenceProject.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 10 "J:\Documents\Code\TVLicenceProject\TvLicenceProject\Pages\FinanceDetails.razor"
-       
-void Navigate()
+#line 72 "J:\Documents\Code\TVLicenceProject\TvLicenceProject\Pages\FinanceDetails.razor"
+ 
+  UserInfo User = new UserInfo();
+  void Navigate()
 {
     UriHelper.NavigateTo("paymentconfirmation");
 }
@@ -101,6 +109,7 @@ void Navigate()
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private UserInfo UserInfo { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager UriHelper { get; set; }
     }
 }
