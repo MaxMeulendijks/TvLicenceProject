@@ -3,12 +3,13 @@ using System.Collections.IList;
 
 namespace TvLicenceProject.Data
 {
-    public class CompareCourtDivision implements Comparator<UserInfo>
+    public class CompareCourtDivision : Comparer<UserInfo>
     {
 
-        public int CompareCourtDivision (UserInfo u1, UserInfo u2)
+        public bool CompareCourtDivision (UserInfo u1, UserInfo u2)
         {
-            return u1.CourtDivision.compareTo(u2.CourtDivision())
+            return string.Equals(u1.CourtDivision, u2.CourtDivision, StringComparison.CurrentCultureIgnoreCase);
+            
         }
         
 

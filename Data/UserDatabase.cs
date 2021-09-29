@@ -26,7 +26,7 @@ namespace TvLicenceProject.Data
 
                 foreach(Userinfo ui in DataEntries)
                 {
-                    if(CompareCourtDivision(User, ui)==0)
+                    if(CompareCourtDivision(User, ui)==true)
                     {
                         return ui.UserFine;
                     }
