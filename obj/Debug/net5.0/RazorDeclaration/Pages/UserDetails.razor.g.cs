@@ -98,15 +98,7 @@ using TvLicenceProject.Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 43 "J:\Documents\Code\TVLicenceProject\TvLicenceProject\Pages\UserDetails.razor"
- 
-  UserInfo User = new UserInfo();
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 48 "J:\Documents\Code\TVLicenceProject\TvLicenceProject\Pages\UserDetails.razor"
+#line 49 "J:\Documents\Code\TVLicenceProject\TvLicenceProject\Pages\UserDetails.razor"
        
 void Navigate()
 {
@@ -116,7 +108,7 @@ void Navigate()
 #line default
 #line hidden
 #nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private Data.UserInfo UserInfo { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private UserInfo User { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager UriHelper { get; set; }
     }
 }

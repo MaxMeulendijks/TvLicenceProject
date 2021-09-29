@@ -100,7 +100,7 @@ using TvLicenceProject.Data;
 #nullable restore
 #line 74 "J:\Documents\Code\TVLicenceProject\TvLicenceProject\Pages\FinanceDetails.razor"
  
-  UserInfo User = new UserInfo();
+  
   
   void Navigate()
 {
@@ -110,7 +110,7 @@ using TvLicenceProject.Data;
 #line default
 #line hidden
 #nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private Data.UserInfo UserInfo { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private UserInfo User { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager UriHelper { get; set; }
     }
 }
