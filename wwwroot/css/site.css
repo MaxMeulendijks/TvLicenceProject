@@ -49,60 +49,100 @@ a, .btn-link {
         top: 0.5rem;
     }
 
-    .govuk-button, .govspeak .gem-c-button, .gem-c-govspeak .gem-c-button {
-        font-family: "GDS Transport",arial,sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        font-weight: 400;
-        /* font-size: 16px;
-        font-size: 1rem;
-        line-height: 1.1875; */
-        box-sizing: border-box;
-        /* display: inline-block; */
-        position: relative;
-        /* width: 100%; */
-        margin-top: 0;
-        /* margin-right: 0; */
-        margin-left: 0;
-        /* margin-bottom: 22px; */
-        padding: 8px 10px 7px;
-        border: 2px solid transparent;
-        border-radius: 0;
-        color: #fff;
-        background-color: #00703c;
-        box-shadow: 0 2px 0 #002d18;
-        text-align: center;
-        vertical-align: top;
-        cursor: pointer;
-        -webkit-appearance: none;
+.govuk-button, .govspeak .gem-c-button, .gem-c-govspeak .gem-c-button {
+    font-family: "GDS Transport",arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    /* font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.1875; */
+    box-sizing: border-box;
+    /* display: inline-block; */
+    position: relative;
+    /* width: 100%; */
+    margin-top: 0;
+    /* margin-right: 0; */
+    margin-left: 0;
+    /* margin-bottom: 22px; */
+    padding: 8px 10px 7px;
+    border: 2px solid transparent;
+    border-radius: 0;
+    color: #fff;
+    background-color: #00703c;
+    box-shadow: 0 2px 0 #002d18;
+    text-align: center;
+    vertical-align: top;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+.govuk-width-container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 960px;
+}
+
+.fulllength{
+        /* width: 280px; */
+        width:50%;
     }
 
-    .govuk-width-container {
-        margin-right: auto;
-        margin-left: auto;
-        max-width: 960px;
-    }
+.dateComp{
+    width: 60px;
+}
 
-    .payment-form, #CourtDivision, input[type="text"], input[type="email"], input[type="number"], input[type="tel"], input[type="search"], input[type="url"], input[type="password"] {
-        display: block;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        border: .2rem inset;
-        border: .2rem solid #0b0c0c;
-        padding: .2rem 0 .2rem .4rem;
-        background-color: #fff;
-    }
-    .payment-form, #CourtDivision, input[type="text"], input[type="search"], input[type="checkbox"], input[type="reset"], input[type="email"], input[type="password"], textarea, select {
-        font-size: 19px;
-        line-height: 1.3157894737;
-    }
-    .payment-form, #CourtDivision, input[type="text"], input[type="search"], input[type="checkbox"], input[type="reset"], input[type="email"], input[type="password"], textarea, select {
-        font-family: "nta",Arial,sans-serif;
-        font-weight: 400;
-        text-transform: none;
-        font-size: 16px;
-        line-height: 1.25;
-        width: 100%;
-        max-width: 32rem;
-    }
+.cscnumber{
+    width:80px;
+}
+
+.payment-form, #CourtDivision, input[type="text"], input[type="email"], input[type="number"], input[type="tel"], input[type="search"], input[type="url"], input[type="password"] {
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: .2rem inset;
+    border: .2rem solid #0b0c0c;
+    padding: .2rem 0 .2rem .4rem;
+    background-color: #fff;
+}
+
+.payment-form, #CourtDivision, input[type="text"], input[type="search"], input[type="checkbox"], input[type="reset"], input[type="email"], input[type="password"], textarea, select {
+    font-size: 19px;
+    line-height: 1.3157894737;
+}
+
+.payment-form, #CourtDivision, input[type="text"], input[type="search"], input[type="checkbox"], input[type="reset"], input[type="email"], input[type="password"], textarea, select {
+    font-family: "nta",Arial,sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 1.25;
+    /* width: 100%; */
+    max-width: 32rem;
+}
+
+#ExpiryMonth, #ExpiryYear{
+    /* float:left;  */
+    display:inline; 
+}
+
+#span{
+    padding-left: 30px;
+}
+
+.pad-down{
+    margin-bottom: 5px;
+}
+
+
+
+blockquote {
+    margin: 0;
+}
+
+blockquote {
+    padding: 15px;
+    background:lightgray;
+    border-radius: 5px;
+}
