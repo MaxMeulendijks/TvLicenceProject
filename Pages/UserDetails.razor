@@ -32,6 +32,8 @@ Please enter your user details.
   <button class="govuk-button" type="submit" value="submit" @onclick=@Navigate>Submit details</button>
 </EditForm>
 
+Court Divison: @User.CourtDivision
+
 @code
 {
   UserInfo User = new UserInfo();
