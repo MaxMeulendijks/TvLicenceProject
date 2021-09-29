@@ -76,3 +76,9 @@ a, .btn-link {
         cursor: pointer;
         -webkit-appearance: none;
     }
+
+    .govuk-width-container {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 960px;
+    }

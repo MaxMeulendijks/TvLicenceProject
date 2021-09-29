@@ -77,6 +77,19 @@
     text-align: center;
     
 }
+
+.govuk-width-container[b-tbuslxnufd] {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 960px;
+}
+
+.govuk-header__container[b-tbuslxnufd] {
+    position: relative;
+    margin-bottom: -10px;
+    padding-top: 10px;
+    border-bottom: 10px solid #1d70b8;
+}
 /* _content/TvLicenceProject/Shared/NavMenu.razor.rz.scp.css */
 .navbar-toggler[b-bym5seohhb] {
     background-color: rgba(255, 255, 255, 0.1);
