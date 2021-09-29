@@ -1,18 +1,18 @@
 @page "/financedetails"
 @inject NavigationManager UriHelper
 @using TvLicenceProject.Data
-@inject Data.UserInfo User
+@inject UserInfo User
 
 <h1>Payment Details</h1>
 
 Please fill out your payment details:
 
 <div>
-<EditForm Model=@UserInfo>
+<EditForm Model=@User>
 <ul>
   <label for="CardNumber">Card Number</label> 
   <br>
-  <InputText id="CardNumber" @bind-Value=UserInfo.CardNumber />
+  <InputText id="CardNumber" @bind-Value=User.CardNumber />
 </ul>
 <ul>
 Expiry date
@@ -24,18 +24,18 @@ Expiry date
    / 
   <label for="ExpiryYear">Year</label>
   <br>
-  <InputText id="ExpiryMonth" @bind-Value=UserInfo.ExpiryMonth />
-  <InputText id="ExpiryYear" @bind-Value=UserInfo.ExpiryYear />
+  <InputText id="ExpiryMonth" @bind-Value=User.ExpiryMonth />
+  <InputText id="ExpiryYear" @bind-Value=User.ExpiryYear />
 </ul>
 <ul>
   <label for="CardName">Name on Card</label>
   <br>
-  <InputText id="CardName" @bind-Value=UserInfo.LicenceNumber />
+  <InputText id="CardName" @bind-Value=User.LicenceNumber />
 </ul>
 <ul>
   <label for="CardSecurity">Card security code</label>
   <br>
-  <InputText id="CardSecurity" @bind-Value=UserInfo.CardSecurity />
+  <InputText id="CardSecurity" @bind-Value=User.CardSecurity />
 </ul>
 <ul>
 Billing Address 
@@ -43,17 +43,17 @@ Billing Address
 <ul>
   <label for="BillingStreet">Building address or name and street</label>
   <br>
-  <InputText id="BillingStreet" @bind-Value=UserInfo.BillingStreet />
+  <InputText id="BillingStreet" @bind-Value=User.BillingStreet />
   <br>
-  <InputText id="BillingStreet" @bind-Value=UserInfo.BillingStreet />
+  <InputText id="BillingStreet" @bind-Value=User.BillingStreet />
 </ul>
 <ul>
   <label for="">City</label>
   <label for="">Postcode</label>
 </ul>
 <ul>
-  <InputText id="BillingCity" @bind-Value=UserInfo.BillingCity />
-  <InputText id="BillingPostCode" @bind-Value=UserInfo.BillingPostcode />
+  <InputText id="BillingCity" @bind-Value=User.BillingCity />
+  <InputText id="BillingPostCode" @bind-Value=User.BillingPostcode />
 </ul>
 <ul>
   Email
@@ -61,7 +61,7 @@ Billing Address
   We will send your billing confirmation here.
 </ul>
 <ul>
-  <InputText id="BillingEmail" @bind-Value=UserInfo.BillingEmail />
+  <InputText id="BillingEmail" @bind-Value=User.BillingEmail />
 </ul>
   <button class="govuk-button" type="submit" value="submit" @onclick=@Navigate>Submit payment details</button>
 </EditForm>
