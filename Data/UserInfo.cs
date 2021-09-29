@@ -17,7 +17,7 @@ namespace TvLicenceProject.Data
         public string CardSecurity {get; set;}
         public string BillingStreet {get; set;}
         public string BillingCity {get; set;}
-        public string BillingPostCode {get; set;}
+        public string BillingPostcode {get; set;}
         public string BillingEmail {get; set;}
 
 
