@@ -98,7 +98,7 @@ using TvLicenceProject.Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 49 "J:\Documents\Code\TVLicenceProject\TvLicenceProject\Pages\UserDetails.razor"
+#line 56 "J:\Documents\Code\TVLicenceProject\TvLicenceProject\Pages\UserDetails.razor"
        
 void Navigate()
 {

@@ -2,29 +2,29 @@
 @inject NavigationManager UriHelper
 @using TvLicenceProject.Data
 @inject UserInfo User
-<div>
-<h1>Please check you input the right details:</h1>
-<br>
-<br>
-<ul>
-<p>TV Licence Reference Number: @User.LicenceNumber</p>
-</ul>
-<ul>
-<p>Surname: @User.UserSurname</p>
-</ul>
-<ul>
-<p>Postcode: @User.UserPostcode</p>
-</ul>
-<ul>
-<p>Name on Card: @User.CardName</p>
-</ul>
-<ul>
-<p>Card Number: @User.CardNumber</p>
-</ul>
-<ul>
-<p>Email Address: @User.BillingEmail</p>
-</ul>
+<div class='govuk-width-container '>
+    <br>
+    <h1>Please check you input the right details:</h1>
+    <br>
+    <br>
+    
+    <p>TV Licence Reference Number: @User.LicenceNumber</p>
+   
+ 
+    <p>Surname: @User.UserSurname</p>
+    
+   
+    <p>Postcode: @User.UserPostcode</p>
 
+
+    <p>Name on Card: @User.CardName</p>
+  
+    
+    <p>Card Number: @User.CardNumber</p>
+
+
+    <p>Email Address: @User.BillingEmail</p>
+ 
 
 
 

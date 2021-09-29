@@ -84,9 +84,13 @@ a, .btn-link {
 }
 
 .fulllength{
-        /* width: 280px; */
-        width:50%;
-    }
+    /* width: 280px; */
+    width:50%;
+}
+
+.halflength{
+    width:25%;
+}
 
 .dateComp{
     width: 60px;
@@ -134,8 +138,6 @@ a, .btn-link {
 .pad-down{
     margin-bottom: 5px;
 }
-
-
 
 blockquote {
     margin: 0;

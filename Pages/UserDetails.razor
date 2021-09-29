@@ -7,32 +7,39 @@
   <br>
 
   <h1>User Details</h1>
-
+  
+  <br>
   Please enter your user details.
   <br>
   <br>
 
   <EditForm Model=@User>
-    <ul>
-      <label for="CourtDivision">Court Division</label>
-      <InputText id="CourtDivision" @bind-Value=User.CourtDivision />
-    </ul>
-    <ul>
-      <label for="AccountNumber">Account Number</label>
-      <InputText id="CourtDivision" @bind-Value=User.AccountNumber />
-    </ul>
-    <ul>
-      <label for="LicenceNumber">TV Licence Number</label>
-      <InputText id="CourtDivision" @bind-Value=User.LicenceNumber />
-    </ul>
-    <ul>
-      <label for="UserSurname">Surname</label>
-      <InputText id="CourtDivision" @bind-Value=User.UserSurname />
-    </ul>
-    <ul>
-      <label for="UserPostcode">Postcode</label>
-      <InputText id="CourtDivision" @bind-Value=User.UserPostcode />
-    </ul>
+    
+      <h5>Court Division</h5>
+      <InputText id="CourtDivision" class="fulllength" @bind-Value=User.CourtDivision />
+
+      <br>
+
+      <h5>Account Number</h5>
+      <InputText id="CourtDivision" class="fulllength" @bind-Value=User.AccountNumber />
+
+      <br>
+    
+      <h5>TV Licence Number</h5>
+      <InputText id="CourtDivision" class="fulllength" @bind-Value=User.LicenceNumber />
+
+      <br>
+    
+      <h5>Surname</h5>
+      <InputText id="CourtDivision" class="fulllength" @bind-Value=User.UserSurname />
+
+      <br>
+
+      <h5>Postcode</h5>
+      <InputText id="CourtDivision" class="halflength" @bind-Value=User.UserPostcode />
+
+      <br>
+ 
 
     <button class="govuk-button" type="submit" value="submit" @onclick=@Navigate>Submit details</button>
   </EditForm>
