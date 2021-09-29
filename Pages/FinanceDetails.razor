@@ -3,70 +3,72 @@
 @using TvLicenceProject.Data
 @inject Data.UserInfo UserInfo
 
-<h1>Payment Details</h1>
+<div class="govuk-width-container">
+  <h1>Payment Details</h1>
 
-Please fill out your payment details:
+  Please fill out your payment details:
 
-<div>
-<EditForm Model=@UserInfo>
-<ul>
-  <label for="CardNumber">Card Number</label> 
-  <br>
-  <InputText id="CardNumber" @bind-Value=UserInfo.CardNumber />
-</ul>
-<ul>
-Expiry date
-<br> 
-(For example, 10/20)
-</ul>
-<ul>
-  <label for="ExpiryMonth">Month</label>
-   / 
-  <label for="ExpiryYear">Year</label>
-  <br>
-  <InputText id="ExpiryMonth" @bind-Value=UserInfo.ExpiryMonth />
-  <InputText id="ExpiryYear" @bind-Value=UserInfo.ExpiryYear />
-</ul>
-<ul>
-  <label for="CardName">Name on Card</label>
-  <br>
-  <InputText id="CardName" @bind-Value=UserInfo.LicenceNumber />
-</ul>
-<ul>
-  <label for="CardSecurity">Card security code</label>
-  <br>
-  <InputText id="CardSecurity" @bind-Value=UserInfo.CardSecurity />
-</ul>
-<ul>
-Billing Address 
-</ul>
-<ul>
-  <label for="BillingStreet">Building address or name and street</label>
-  <br>
-  <InputText id="BillingStreet" @bind-Value=UserInfo.BillingStreet />
-  <br>
-  <InputText id="BillingStreet" @bind-Value=UserInfo.BillingStreet />
-</ul>
-<ul>
-  <label for="">City</label>
-  <label for="">Postcode</label>
-</ul>
-<ul>
-  <InputText id="BillingCity" @bind-Value=UserInfo.BillingCity />
-  <InputText id="BillingPostCode" @bind-Value=UserInfo.BillingPostcode />
-</ul>
-<ul>
-  Email
-  <br>
-  We will send your billing confirmation here.
-</ul>
-<ul>
-  <InputText id="BillingEmail" @bind-Value=UserInfo.BillingEmail />
-</ul>
-  <button class="btn btn-primary" type="submit" value="submit" @onclick=@Navigate>Submit payment details</button>
-</EditForm>
+  <div>
+  <EditForm Model=@UserInfo>
+  <ul>
+    <label for="CardNumber">Card Number</label> 
+    <br>
+    <InputText id="CardNumber" @bind-Value=UserInfo.CardNumber />
+  </ul>
+  <ul>
+  Expiry date
+  <br> 
+  (For example, 10/20)
+  </ul>
+  <ul>
+    <label for="ExpiryMonth">Month</label>
+    / 
+    <label for="ExpiryYear">Year</label>
+    <br>
+    <InputText id="ExpiryMonth" @bind-Value=UserInfo.ExpiryMonth />
+    <InputText id="ExpiryYear" @bind-Value=UserInfo.ExpiryYear />
+  </ul>
+  <ul>
+    <label for="CardName">Name on Card</label>
+    <br>
+    <InputText id="CardName" @bind-Value=UserInfo.LicenceNumber />
+  </ul>
+  <ul>
+    <label for="CardSecurity">Card security code</label>
+    <br>
+    <InputText id="CardSecurity" @bind-Value=UserInfo.CardSecurity />
+  </ul>
+  <ul>
+  Billing Address 
+  </ul>
+  <ul>
+    <label for="BillingStreet">Building address or name and street</label>
+    <br>
+    <InputText id="BillingStreet" @bind-Value=UserInfo.BillingStreet />
+    <br>
+    <InputText id="BillingStreet" @bind-Value=UserInfo.BillingStreet />
+  </ul>
+  <ul>
+    <label for="">City</label>
+    <label for="">Postcode</label>
+  </ul>
+  <ul>
+    <InputText id="BillingCity" @bind-Value=UserInfo.BillingCity />
+    <InputText id="BillingPostCode" @bind-Value=UserInfo.BillingPostcode />
+  </ul>
+  <ul>
+    Email
+    <br>
+    We will send your billing confirmation here.
+  </ul>
+  <ul>
+    <InputText id="BillingEmail" @bind-Value=UserInfo.BillingEmail />
+  </ul>
+    <button class="btn btn-primary" type="submit" value="submit" @onclick=@Navigate>Submit payment details</button>
+  </EditForm>
+  </div>
+
 </div>
-
 
 @code
 {

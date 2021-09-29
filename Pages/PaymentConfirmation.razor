@@ -2,16 +2,17 @@
 @inject NavigationManager UriHelper
 @using TvLicenceProject.Data
 @inject Data.UserInfo UserInfo
+<div class="govuk-width-container">
+    <h1>Please check you input the right details:</h1>
+    <br>
+    <br>
+    Name on Card: @UserInfo.CardName
 
-<h1>Please check you input the right details:</h1>
-<br>
-<br>
-Name on Card: @UserInfo.CardName
+    <br>
+    etc, etc.
 
-<br>
-etc, etc.
-
-<button class="govuk-button" @onclick=@Navigate>Pay</button>
+    <button class="govuk-button" @onclick=@Navigate>Pay</button>
+</div>
 
 @code {
 void Navigate()

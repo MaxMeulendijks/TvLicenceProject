@@ -97,7 +97,21 @@ using TvLicenceProject.Data;
         {
         }
         #pragma warning restore 1998
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private UserInfo UserInfo { get; set; }
+#nullable restore
+#line 17 "J:\Documents\Code\TVLicenceProject\TvLicenceProject\Pages\PaymentConfirmation.razor"
+       
+void Navigate()
+{
+
+UserInfo User = new UserInfo();
+
+    UriHelper.NavigateTo("paymentreceipt");
+}
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private Data.UserInfo UserInfo { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager UriHelper { get; set; }
     }
 }
