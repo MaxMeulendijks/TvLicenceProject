@@ -1,5 +1,5 @@
 using System;
-using static System.Collections.IList;
+using System.Collections.IList;
 
 namespace TvLicenceProject.Data
 {
