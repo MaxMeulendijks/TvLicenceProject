@@ -82,7 +82,7 @@ using TvLicenceProject.Shared;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/")]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/landingpage")]
     public partial class LandingPage : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998

@@ -4,39 +4,57 @@
 @inject UserInfo User
 <div class='govuk-width-container '>
     <br>
-    <h1>Please check you input the right details:</h1>
+    <h1>Confirm your payment</h1>
     <br>
     <br>
-    
-    <p>TV Licence Reference Number: @User.LicenceNumber</p>
-   
- 
-    <p>Surname: @User.UserSurname</p>
-    
-   
-    <p>Postcode: @User.UserPostcode</p>
+
+    <div >
+        <table>
+            @* <hr style="width:100%; text-align:left; margin-left:0"> *@
+            <tr class="separated">
+                
+                <td><h5 class='normal-font'>TV Licence Number:</h5></td>
+                <td><h5>@User.LicenceNumber</h5></td>
+            </tr>
+            <tr>
+                <td><h5 class='normal-font'>Surname:</h5></td>
+                <td><h5>@User.UserSurname</h5></td>
+            </tr>
+            <tr>
+                <td><h5 class='normal-font'>Postcode:</h5></td>
+                <td><h5>@User.UserPostcode</h5></td>
+            </tr>
+            <tr>
+                <td><h5 class='normal-font'>Name on Card:</h5></td>
+                <td><h5>@User.CardName</h5></td>
+            </tr>
+            <tr>
+                <td><h5 class='normal-font'>Card Number:</h5></td>
+                <td><h5>@User.CardNumber</h5></td>
+            </tr>
+            <tr>
+                <td><h5 class='normal-font'>Email Address:</h5></td>
+                <td><h5>@User.BillingEmail</h5></td>
+            </tr> 
+
+        </table>
+
+    </div>
+
+    <br>
 
 
-    <p>Name on Card: @User.CardName</p>
-  
-    
-    <p>Card Number: @User.CardNumber</p>
+    <button class="govuk-button" @onclick=@Navigate>Confirm Payment</button>
 
+    <br>
+    <br>
 
-    <p>Email Address: @User.BillingEmail</p>
- 
-
-
-
-    <button class="govuk-button" @onclick=@Navigate>Pay</button>
+    <a href='landingpage'>Cancel payment</a>
 </div>
 
 @code {
 void Navigate()
 {
-
-
-
     UriHelper.NavigateTo("paymentreceipt");
 }
 }

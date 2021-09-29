@@ -98,13 +98,10 @@ using TvLicenceProject.Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 34 "J:\Documents\Code\TVLicenceProject\TvLicenceProject\Pages\PaymentConfirmation.razor"
+#line 55 "J:\Documents\Code\TVLicenceProject\TvLicenceProject\Pages\PaymentConfirmation.razor"
        
 void Navigate()
 {
-
-
-
     UriHelper.NavigateTo("paymentreceipt");
 }
 

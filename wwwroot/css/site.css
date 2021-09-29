@@ -148,3 +148,38 @@ blockquote {
     background:lightgray;
     border-radius: 5px;
 }
+
+#gray-back{
+    padding: 15px;
+    background:lightgray;
+    border-radius: 5px;
+}
+
+h5, h3{
+    display: block;
+    
+    
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.normal-font{
+    font-weight: normal;
+}
+
+a {
+    text-decoration: underline;
+}
+
+
+tr.separated td, td {
+    /* set border style for separated rows */
+    border-bottom: 1px solid rgb(121, 121, 121);
+} 
+
+table {
+    /* make the border continuous (without gaps between columns) */
+    border-collapse: collapse;
+}
+
