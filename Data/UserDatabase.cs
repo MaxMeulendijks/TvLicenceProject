@@ -30,7 +30,7 @@ namespace TvLicenceProject.Data
 
                 foreach(UserInfo ui in DataEntries)
                 {
-                    if(UserSubmission.Equals(User, ui)==true)
+                    if(compareCourt.Equals(User, ui)==true)
                     {
                         return ui.UserFine;
                     }
