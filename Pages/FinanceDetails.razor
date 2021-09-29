@@ -3,9 +3,10 @@
 @using TvLicenceProject.Data
 @inject UserInfo User
 
-<h1>Payment Details</h1>
+<div class="govuk-width-container">
+  <h1>Payment Details</h1>
 
-Please fill out your payment details:
+  Please fill out your payment details:
 
 <div>
 <EditForm Model=@User>
@@ -67,6 +68,7 @@ Billing Address
 </EditForm>
 </div>
 
+</div>
 
 @code
 {

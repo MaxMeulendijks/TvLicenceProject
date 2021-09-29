@@ -2,7 +2,7 @@
 @inject NavigationManager UriHelper
 @using TvLicenceProject.Data
 @inject UserInfo User
-
+<div>
 <h1>Please check you input the right details:</h1>
 <br>
 <br>
@@ -28,10 +28,8 @@
 
 
 
-<br>
-etc, etc.
-
-<button class="govuk-button" @onclick=@Navigate>Pay</button>
+    <button class="govuk-button" @onclick=@Navigate>Pay</button>
+</div>
 
 @code {
 void Navigate()
