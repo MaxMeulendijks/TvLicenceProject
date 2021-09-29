@@ -10,26 +10,31 @@ Please fill out your payment details:
 <div>
 <EditForm Model=@UserInfo>
 <ul>
-  <label for="CardNumber">Court Division</label>
+  <label for="CardNumber">Card Number</label> 
+  <br>
   <InputText id="CardNumber" @bind-Value=User.CardNumber />
 </ul>
 <ul>
-Expiry date 
+Expiry date
+<br> 
 (For example, 10/20)
 </ul>
 <ul>
   <label for="ExpiryMonth">Month</label>
-  <InputText id="ExpiryMonth" @bind-Value=User.ExpiryMonth />
    / 
   <label for="ExpiryYear">Year</label>
+  <br>
+  <InputText id="ExpiryMonth" @bind-Value=User.ExpiryMonth />
   <InputText id="ExpiryYear" @bind-Value=User.ExpiryYear />
 </ul>
 <ul>
   <label for="CardName">Name on Card</label>
+  <br>
   <InputText id="CardName" @bind-Value=User.LicenceNumber />
 </ul>
 <ul>
   <label for="CardSecurity">Card security code</label>
+  <br>
   <InputText id="CardSecurity" @bind-Value=User.CardSecurity />
 </ul>
 <ul>
@@ -37,7 +42,9 @@ Billing Address
 </ul>
 <ul>
   <label for="BillingStreet">Building address or name and street</label>
+  <br>
   <InputText id="BillingStreet" @bind-Value=User.BillingStreet />
+  <br>
   <InputText id="BillingStreet" @bind-Value=User.BillingStreet />
 </ul>
 <ul>
@@ -50,6 +57,7 @@ Billing Address
 </ul>
 <ul>
   Email
+  <br>
   We will send your billing confirmation here.
 </ul>
 <ul>
