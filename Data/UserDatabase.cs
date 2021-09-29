@@ -1,6 +1,5 @@
 using System;
 using System.Collections.IList;
-inject UserInfo User;
 
 namespace TvLicenceProject.Data
 {
