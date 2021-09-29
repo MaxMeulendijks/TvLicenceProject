@@ -82,3 +82,27 @@ a, .btn-link {
         margin-left: auto;
         max-width: 960px;
     }
+
+    .payment-form, #CourtDivision, input[type="text"], input[type="email"], input[type="number"], input[type="tel"], input[type="search"], input[type="url"], input[type="password"] {
+        display: block;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        border: .2rem inset;
+        border: .2rem solid #0b0c0c;
+        padding: .2rem 0 .2rem .4rem;
+        background-color: #fff;
+    }
+    .payment-form, #CourtDivision, input[type="text"], input[type="search"], input[type="checkbox"], input[type="reset"], input[type="email"], input[type="password"], textarea, select {
+        font-size: 19px;
+        line-height: 1.3157894737;
+    }
+    .payment-form, #CourtDivision, input[type="text"], input[type="search"], input[type="checkbox"], input[type="reset"], input[type="email"], input[type="password"], textarea, select {
+        font-family: "nta",Arial,sans-serif;
+        font-weight: 400;
+        text-transform: none;
+        font-size: 16px;
+        line-height: 1.25;
+        width: 100%;
+        max-width: 32rem;
+    }

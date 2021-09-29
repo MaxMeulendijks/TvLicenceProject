@@ -13,7 +13,7 @@
   <ul>
     <label for="CardNumber">Card Number</label> 
     <br>
-    <InputText id="CardNumber" @bind-Value=UserInfo.CardNumber />
+    <InputText id="CardNumber" class="payment-form" @bind-Value=UserInfo.CardNumber />
   </ul>
   <ul>
   Expiry date
@@ -25,18 +25,18 @@
     / 
     <label for="ExpiryYear">Year</label>
     <br>
-    <InputText id="ExpiryMonth" @bind-Value=UserInfo.ExpiryMonth />
-    <InputText id="ExpiryYear" @bind-Value=UserInfo.ExpiryYear />
+    <InputText id="ExpiryMonth" class="payment-form" @bind-Value=UserInfo.ExpiryMonth />
+    <InputText id="ExpiryYear" class="payment-form" @bind-Value=UserInfo.ExpiryYear />
   </ul>
   <ul>
     <label for="CardName">Name on Card</label>
     <br>
-    <InputText id="CardName" @bind-Value=UserInfo.LicenceNumber />
+    <InputText id="CardName" class="payment-form" @bind-Value=UserInfo.LicenceNumber />
   </ul>
   <ul>
     <label for="CardSecurity">Card security code</label>
     <br>
-    <InputText id="CardSecurity" @bind-Value=UserInfo.CardSecurity />
+    <InputText id="CardSecurity" class="payment-form" @bind-Value=UserInfo.CardSecurity />
   </ul>
   <ul>
   Billing Address 
@@ -44,17 +44,17 @@
   <ul>
     <label for="BillingStreet">Building address or name and street</label>
     <br>
-    <InputText id="BillingStreet" @bind-Value=UserInfo.BillingStreet />
+    <InputText id="BillingStreet" class="payment-form" @bind-Value=UserInfo.BillingStreet />
     <br>
-    <InputText id="BillingStreet" @bind-Value=UserInfo.BillingStreet />
+    <InputText id="BillingStreet" class="payment-form" @bind-Value=UserInfo.BillingStreet />
   </ul>
   <ul>
     <label for="">City</label>
     <label for="">Postcode</label>
   </ul>
   <ul>
-    <InputText id="BillingCity" @bind-Value=UserInfo.BillingCity />
-    <InputText id="BillingPostCode" @bind-Value=UserInfo.BillingPostcode />
+    <InputText id="BillingCity" class="payment-form" @bind-Value=UserInfo.BillingCity />
+    <InputText id="BillingPostCode" class="payment-form" @bind-Value=UserInfo.BillingPostcode />
   </ul>
   <ul>
     Email
@@ -62,9 +62,9 @@
     We will send your billing confirmation here.
   </ul>
   <ul>
-    <InputText id="BillingEmail" @bind-Value=UserInfo.BillingEmail />
+    <InputText id="BillingEmail" class="payment-form" @bind-Value=UserInfo.BillingEmail />
   </ul>
-    <button class="btn btn-primary" type="submit" value="submit" @onclick=@Navigate>Submit payment details</button>
+    <button class="govuk-button" type="submit" value="submit" @onclick=@Navigate>Submit payment details</button>
   </EditForm>
   </div>
 
