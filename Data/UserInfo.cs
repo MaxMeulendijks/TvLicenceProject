@@ -10,5 +10,16 @@ namespace TvLicenceProject.Data
         public string UserSurname {get; set;}
         public string UserPostcode {get; set;}
 
+        public string CardNumber {get; set;}
+        public string ExpiryMonth {get; set;}
+        public string ExpiryYear {get; set;}
+        public string CardName {get; set;}
+        public string CardSecurity {get; set;}
+        public string BillingStreet {get; set;}
+        public string BillingCity {get; set;}
+        public string BillingPostCode {get; set;}
+        public string BillingEmail {get; set;}
+
+
     }
 }
