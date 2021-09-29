@@ -63,7 +63,7 @@ Billing Address
 <ul>
   <InputText id="BillingEmail" @bind-Value=User.BillingEmail />
 </ul>
-  <button class="btn btn-primary" type="submit" value="submit" @onclick=@Navigate>Submit details</button>
+  <button class="btn btn-primary" type="submit" value="submit" @onclick=@Navigate>Submit payment details</button>
 </EditForm>
 </div>
 
@@ -71,12 +71,7 @@ Billing Address
 @code
 {
   UserInfo User = new UserInfo();
-}
-
-<button class="btn btn-primary" @onclick=@Navigate>Submit payment details</button>
-
-@code {
-void Navigate()
+  void Navigate()
 {
     UriHelper.NavigateTo("paymentconfirmation");
 }
