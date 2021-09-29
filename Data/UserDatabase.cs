@@ -7,19 +7,22 @@ namespace TvLicenceProject.Data
     {
             public int CheckPresence (UserInfo User)
             {
-                ArrayList DataEntries = new ArrayList<UserInfo>();
+                List<UserInfo> DataEntries = new List<UserInfo>();
 
                 UserInfo Emily = new UserInfo();
                 Emily.CourtDivision = "C1";
                 Emily.UserFine = 150;
+                DataEntries.Add(Emily);
 
                 UserInfo Brian = new UserInfo();
                 Brian.CourtDivision = "C2";
                 Brian.UserFine = 100;
+                DataEntries.Add(Brian);
 
                 UserInfo Margret = new UserInfo();
                 Margret.CourtDivision = "C3";
                 Margret.UserFine = 0;
+                DataEntries.Add(Margret);
 
                 foreach(Userinfo ui in DataEntries)
                 {
