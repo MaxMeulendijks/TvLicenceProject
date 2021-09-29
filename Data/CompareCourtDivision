@@ -8,7 +8,7 @@ namespace TvLicenceProject.Data
 
         public int CompareCourtDivision (UserInfo u1, UserInfo u2)
         {
-            return u1.CourtDivision.compareTo(u2.getCity())
+            return u1.CourtDivision.compareTo(u2.CourtDivision())
         }
         
 

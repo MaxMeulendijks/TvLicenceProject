@@ -5,7 +5,7 @@ namespace TvLicenceProject.Data
 {
     public class UserDatabase
     {
-            public int UserDatabase (UserInfo User)
+            public int CheckPresence (UserInfo User)
             {
                 ArrayList<UserInfo> DataEntries = new ArrayList<UserInfo>;
 
