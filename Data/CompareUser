@@ -3,7 +3,7 @@ using System.Collections.IList;
 
 namespace TvLicenceProject.Data
 {
-    public class CompareCourtDivision : Comparer<UserInfo>
+    public class CompareUser : Comparer<UserInfo>
     {
 
         public bool CompareCourtDivision (UserInfo u1, UserInfo u2)
