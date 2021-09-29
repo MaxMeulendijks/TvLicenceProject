@@ -1,9 +1,12 @@
-@page "/paymentconfirmation"
+@page "/paymentconfirmation/{User}"
 @inject NavigationManager UriHelper
+@using TvLicenceProject.Data
+@inject UserInfo UserInfo
 
 <h1>Please check you input the right details:</h1>
 <br>
 <br>
+Name on Card: @User.CardName
 <br>
 etc, etc.
 
@@ -12,6 +15,7 @@ etc, etc.
 @code {
 void Navigate()
 {
+    UserInfo User = @User;
     UriHelper.NavigateTo("paymentreceipt");
 }
 }
