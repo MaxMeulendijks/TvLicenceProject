@@ -26,7 +26,7 @@ namespace TvLicenceProject.Data
                 Margret.UserFine = 0;
                 DataEntries.Add(Margret);
 
-                foreach(Userinfo ui in DataEntries)
+                foreach(UserInfo ui in DataEntries)
                 {
                     if(CompareCourtDivision(User, ui)==true)
                     {
