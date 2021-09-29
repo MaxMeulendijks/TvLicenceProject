@@ -26,9 +26,11 @@ namespace TvLicenceProject.Data
                 Margret.UserFine = 0;
                 DataEntries.Add(Margret);
 
+                CompareUser UserSubmission = new CompareUser();
+
                 foreach(UserInfo ui in DataEntries)
                 {
-                    if(CompareUser.CompareCourtDivision(User, ui)==true)
+                    if(UserSubmission.CompareCourtDivision(User, ui)==true)
                     {
                         return ui.UserFine;
                     }
@@ -37,4 +39,19 @@ namespace TvLicenceProject.Data
                 return -1;
             }
     }
+
+    public class CompareUser : Comparer<UserInfo>
+    {
+
+        public bool CompareCourtDivision (UserInfo u1, UserInfo u2)
+        {
+            return string.Equals(u1.CourtDivision, u2.CourtDivision, StringComparison.CurrentCultureIgnoreCase);
+            
+        }
+        
+
+    }
+
+
+
 }
