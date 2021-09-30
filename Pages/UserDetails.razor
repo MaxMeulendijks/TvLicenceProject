@@ -30,19 +30,11 @@ Please enter your user details.
   <InputText id="CourtDivision" @bind-Value=User.UserPostcode />
 </ul>
 <ul>
-  @NotFound.Display
+  
 </ul>
 
   <button class="govuk-button" type="submit" value="submit" @onclick=@Navigate>Submit details</button>
 </EditForm>
-
-
-@code
-{
-  
-}
-
-Please Fill out user details:
 
 <br>
 <br>
@@ -55,7 +47,7 @@ void Navigate()
 
   if(Database.CheckPresence(User)==-1)
   {
-
+    NotFound.Display
   }else{
     UriHelper.NavigateTo("financedetails");
   }
