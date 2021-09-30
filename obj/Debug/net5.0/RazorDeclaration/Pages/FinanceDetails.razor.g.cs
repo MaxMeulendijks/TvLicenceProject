@@ -98,18 +98,20 @@ using TvLicenceProject.Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 72 "J:\Documents\Code\TVLicenceProject\TvLicenceProject\Pages\FinanceDetails.razor"
+#line 99 "J:\Documents\Code\TVLicenceProject\TvLicenceProject\Pages\FinanceDetails.razor"
  
-  UserInfo User = new UserInfo();
+  
+  
   void Navigate()
 {
     UriHelper.NavigateTo("paymentconfirmation");
 }
 
+
 #line default
 #line hidden
 #nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private UserInfo UserInfo { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private UserInfo User { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager UriHelper { get; set; }
     }
 }

@@ -91,7 +91,7 @@ using TvLicenceProject.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 38 "J:\Documents\Code\TVLicenceProject\TvLicenceProject\Pages\LandingPage.razor"
+#line 40 "J:\Documents\Code\TVLicenceProject\TvLicenceProject\Pages\LandingPage.razor"
        
 void Navigate()
 {

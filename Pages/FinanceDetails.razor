@@ -10,70 +10,97 @@
 @User.LicenceNumber
 @Database.CheckPresence(User)
 
-<h1>Payment Details</h1>
+<div class="govuk-width-container">
+  <br>
+  <h1>Enter card details</h1>
+  <br>
+  <div>
+    <EditForm Model=@User>
 
-Please fill out your payment details:
+      <h5>Card number</h5>
+      @* <label for="CardNumber">Card number</label>  *@
+   
+      <InputText id="CardNumber" class="payment-form fulllength" @bind-Value=User.CardNumber />
+    
 
-<div>
-<EditForm Model=@User>
-<ul>
-  <label for="CardNumber">Card Number</label> 
+      <br>
+
+      <h5>Expiry date</h5>
+   
+      <p>For example. 10/20</p>
+    
+    
+      <label for="ExpiryMonth">Month</label>
+      <span id="span"></span>
+      <label for="ExpiryYear">Year</label>
+      <br>
+   
+      <InputText id="ExpiryMonth" class="payment-form dateComp" @bind-Value=User.ExpiryMonth />
+      /
+      <InputText id="ExpiryYear" class="payment-form dateComp" @bind-Value=User.ExpiryYear />
+      
+      <br>
+      <br>
+
+      <h5>Name on card</h5>
+     
+      <InputText id="CardName" class="payment-form fulllength" @bind-Value=User.CardName />
+      <br>
+    
+      <h5>Card security code</h5>
+
+      <p> The last 3 digits on the back of the card</p>
+    
+      <InputText id="CardSecurity" class="payment-form cscnumber" @bind-Value=User.CardSecurity />
+      
+      <br>
+      <br>
+
+
+      <h3>Billing Address</h3> 
+      <p> This is the address associated with the card</p>
+  
+      <h5>Building address or name and street</h5>
+   
+      <InputText id="BillingStreet" class="payment-form pad-down fulllength" @bind-Value=User.BillingStreet />
+      <InputText id="BillingStreet" class="payment-form fulllength" @bind-Value=User.BillingStreet />
+
+      <br>
+
+      <h5>City</h5>
+      <InputText id="BillingCity" class="payment-form pad-down halflength" @bind-Value=User.BillingCity />
+      <br>
+      <h5>Postcode</h5>
+      <InputText id="BillingPostCode" class="payment-form cscnumber" @bind-Value=User.BillingPostcode />
+
+      <br>
+      <h5>Email</h5>
+
+      <p>We'll send your billing confirmation here</p>
+    
+      <InputText id="BillingEmail" class="payment-form fulllength" @bind-Value=User.BillingEmail />
+
+      <br>  
+
+      <blockquote class="fulllength">
+        An email will be sent to:
+        <br>
+        <b>'Add Update when typed: Email Address'</b>
+      </blockquote>
+
+      <br>
+
+      <button class="govuk-button" type="submit" value="submit" @onclick=@Navigate>Continue</button>
+    </EditForm>
+  </div>
   <br>
-  <InputText id="CardNumber" @bind-Value=User.CardNumber />
-</ul>
-<ul>
-Expiry date
-<br> 
-(For example, 10/20)
-</ul>
-<ul>
-  <label for="ExpiryMonth">Month</label>
-   / 
-  <label for="ExpiryYear">Year</label>
-  <br>
-  <InputText id="ExpiryMonth" @bind-Value=User.ExpiryMonth />
-  <InputText id="ExpiryYear" @bind-Value=User.ExpiryYear />
-</ul>
-<ul>
-  <label for="CardName">Name on Card</label>
-  <br>
-  <InputText id="CardName" @bind-Value=User.CardName />
-</ul>
-<ul>
-  <label for="CardSecurity">Card security code</label>
-  <br>
-  <InputText id="CardSecurity" @bind-Value=User.CardSecurity />
-</ul>
-<ul>
-Billing Address 
-</ul>
-<ul>
-  <label for="BillingStreet">Building address or name and street</label>
-  <br>
-  <InputText id="BillingStreet" @bind-Value=User.BillingStreet />
-  <br>
-  <InputText id="BillingStreet" @bind-Value=User.BillingStreet />
-</ul>
-<ul>
-  <label for="">City</label>
-  <label for="">Postcode</label>
-</ul>
-<ul>
-  <InputText id="BillingCity" @bind-Value=User.BillingCity />
-  <InputText id="BillingPostCode" @bind-Value=User.BillingPostcode />
-</ul>
-<ul>
-  Email
-  <br>
-  We will send your billing confirmation here.
-</ul>
-<ul>
-  <InputText id="BillingEmail" @bind-Value=User.BillingEmail />
-</ul>
-  <button class="govuk-button" type="submit" value="submit" @onclick=@Navigate>Submit payment details</button>
-</EditForm>
+
+
+    <a href='/'>Cancel payment</a>
+
+    <br>
+    <br>
 </div>
-
 
 @code
 {
@@ -83,4 +110,5 @@ Billing Address
 {
     UriHelper.NavigateTo("paymentconfirmation");
 }
+
 }

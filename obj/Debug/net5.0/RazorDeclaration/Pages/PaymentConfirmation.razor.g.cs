@@ -89,7 +89,7 @@ using TvLicenceProject.Data;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/paymentconfirmation/{User}")]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/paymentconfirmation")]
     public partial class PaymentConfirmation : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -97,7 +97,18 @@ using TvLicenceProject.Data;
         {
         }
         #pragma warning restore 1998
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private UserInfo UserInfo { get; set; }
+#nullable restore
+#line 55 "J:\Documents\Code\TVLicenceProject\TvLicenceProject\Pages\PaymentConfirmation.razor"
+       
+void Navigate()
+{
+    UriHelper.NavigateTo("paymentreceipt");
+}
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private UserInfo User { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager UriHelper { get; set; }
     }
 }
