@@ -90,7 +90,7 @@ using TvLicenceProject.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 48 "J:\Documents\Code\TVLicenceProject\TvLicenceProject\Shared\NavMenu.razor"
+#line 38 "J:\Documents\Code\TVLicenceProject\TvLicenceProject\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 

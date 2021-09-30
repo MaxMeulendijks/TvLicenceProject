@@ -9,12 +9,12 @@
 <div class="govuk-width-container">
   <br>
 
-  <h1>User Details</h1>
+  <h1>Enter User Details</h1>
   
   <br>
-  Please enter your user details.
-  <br>
-  <br>
+  <p>Please enter your user details.</p>
+  
+  
 
   <EditForm Model=@User OnValidSubmit="@Navigate">
   <DataAnnotationsValidator />
@@ -46,11 +46,11 @@
       <br>
  
 
-    <button class="govuk-button" type="submit" value="submit">Submit details</button>
+    <button id='p' class="govuk-button" type="submit" value="submit">Submit details</button>
   </EditForm>
   <br>
 
-  <a href='/'>Cancel payment</a>
+  <a id='p' href='/'>Cancel payment</a>
 
   <br>
   <br>

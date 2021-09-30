@@ -83,7 +83,7 @@ using TvLicenceProject.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "J:\Documents\Code\TVLicenceProject\TvLicenceProject\Pages\UserDetails.razor"
+#line 4 "J:\Documents\Code\TVLicenceProject\TvLicenceProject\Pages\UserDetails.razor"
 using TvLicenceProject.Data;
 
 #line default
@@ -98,12 +98,15 @@ using TvLicenceProject.Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 62 "J:\Documents\Code\TVLicenceProject\TvLicenceProject\Pages\UserDetails.razor"
+#line 59 "J:\Documents\Code\TVLicenceProject\TvLicenceProject\Pages\UserDetails.razor"
        
-void Navigate()
-{
-    UriHelper.NavigateTo("financedetails");
-}
+        void Navigate()
+        {
+
+        string NotFound = "These user details could not be found, please check details.";
+
+        UriHelper.NavigateTo("financedetails");
+      }
 
 #line default
 #line hidden

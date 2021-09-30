@@ -5,24 +5,13 @@
 @inject UserDatabase Database
 
 
-<h3> User details: </h3>
-<br>
-<h5>Surname: </h5> 
-<p>@Database.UserReturn(User).UserSurname</p>
-<br>
-<h5>Tv Licence Number: </h5> 
-<p>@Database.UserReturn(User).LicenceNumber</p>
-<br>
-<h5>Fine Amount:</h5>
-<h2>£ @Database.FineReturn(User)</h2>
-<br>
 
 
-<div class="govuk-width-container">
+<div class="govuk-width-container float-parent">
   <br>
   <h1>Enter card details</h1>
   <br>
-  <div>
+  <div class='float-child1'>
     <EditForm Model=@User>
 
       <h5>Card number</h5>
@@ -38,9 +27,9 @@
       <p>For example. 10/20</p>
     
     
-      <label for="ExpiryMonth">Month</label>
+      <label id='p' for="ExpiryMonth">Month</label>
       <span id="span"></span>
-      <label for="ExpiryYear">Year</label>
+      <label id='p' for="ExpiryYear">Year</label>
       <br>
    
       <InputText id="ExpiryMonth" class="payment-form dateComp" @bind-Value=User.ExpiryMonth />
@@ -57,7 +46,7 @@
     
       <h5>Card security code</h5>
 
-      <p> The last 3 digits on the back of the card</p>
+      <p>The last 3 digits on the back of the card</p>
     
       <InputText id="CardSecurity" class="payment-form cscnumber" @bind-Value=User.CardSecurity />
       
@@ -79,35 +68,49 @@
       <InputText id="BillingCity" class="payment-form pad-down halflength" @bind-Value=User.BillingCity />
       <br>
       <h5>Postcode</h5>
-      <InputText id="BillingPostCode" class="payment-form cscnumber" @bind-Value=User.BillingPostcode />
+      <InputText id="BillingPostCode" class="payment-form postcode" @bind-Value=User.BillingPostcode />
 
       <br>
       <h5>Email</h5>
 
       <p>We'll send your billing confirmation here</p>
     
-      <InputText id="BillingEmail" class="payment-form fulllength" @bind-Value=User.BillingEmail />
+      <InputText id="BillingEmail" class="payment-form fulllength" onchange=User.BillingEmail @bind-Value=User.BillingEmail />
 
       <br>  
 
       <blockquote class="fulllength">
-        An email will be sent to:
-        <br>
-        <b>'Add Update when typed: Email Address'</b>
+        <p>An email will be sent to:</p>
+        
+        <b>@User.BillingEmail</b>
       </blockquote>
 
       <br>
 
-      <button class="govuk-button" type="submit" value="submit" @onclick=@Navigate>Continue</button>
+      <button id='p' class="govuk-button" type="submit" value="submit" @onclick=@Navigate>Continue</button>
     </EditForm>
+    <br>
+    <a id='p' href='/'>Cancel payment</a> 
+    <br>
+    <br>
   </div>
-  <br>
+  
 
-
-    <a href='/'>Cancel payment</a>
-
+   
+    
+  <div class='float-child2 '>
+    <h3> User details: </h3>
     <br>
+    <h5>Surname: </h5> 
+    <p>@Database.UserReturn(User).UserSurname</p>
     <br>
+    <h5>Tv Licence Number: </h5> 
+    <p>@Database.UserReturn(User).LicenceNumber</p>
+    <br>
+    <h5>Fine Amount:</h5>
+    <h2>£@Database.FineReturn(User)</h2>
+    <br>
+  </div>
 </div>
 
 @code
@@ -121,4 +124,4 @@
 
 }
 
->>>>>>> main
+
