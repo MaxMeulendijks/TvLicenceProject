@@ -1,0 +1,17 @@
+using System;
+using System.Collections.IList;
+
+namespace TvLicenceProject.Data
+{
+    public class CompareUser : Comparer<UserInfo>
+    {
+
+        public bool CompareCourtDivision (UserInfo u1, UserInfo u2)
+        {
+            return string.Equals(u1.CourtDivision, u2.CourtDivision, StringComparison.CurrentCultureIgnoreCase);
+            
+        }
+        
+
+    }
+}

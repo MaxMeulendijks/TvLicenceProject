@@ -1,13 +1,23 @@
+
 @page "/financedetails"
 @inject NavigationManager UriHelper
 @using TvLicenceProject.Data
 @inject UserInfo User
 @inject UserDatabase Database
 
-<h3> Let's check the fine! </h3>
-@User.UserSurname
-@User.LicenceNumber
-@Database.CheckPresence(User)
+
+<h3> User details: </h3>
+<br>
+<h5>Surname: </h5> 
+<p>@Database.UserReturn(User).UserSurname</p>
+<br>
+<h5>Tv Licence Number: </h5> 
+<p>@Database.UserReturn(User).LicenceNumber</p>
+<br>
+<h5>Fine Amount:</h5>
+<h2>£ @Database.FineReturn(User)</h2>
+<br>
+
 
 <div class="govuk-width-container">
   <br>
@@ -84,7 +94,7 @@
       <blockquote class="fulllength">
         An email will be sent to:
         <br>
-        <b>@User.BillingEmail</b>
+        <b>'Add Update when typed: Email Address'</b>
       </blockquote>
 
       <br>
@@ -111,3 +121,4 @@
 }
 
 }
+
