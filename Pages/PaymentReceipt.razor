@@ -1,6 +1,9 @@
 @page "/paymentreceipt"
 @using TvLicenceProject.Data
 @inject UserInfo User
+
+@inject UserDatabase Database
+
 <div  class="govuk-width-container">
   <br>
   <h1>Payment complete</h1>
@@ -12,22 +15,22 @@
             <tr class="separated">
                 
                 <td><h5 class='normal-font'>Payment Reference number:</h5></td>
-                <td><h5>@User.LicenceNumber</h5></td>
+                <td><h5>12345678910</h5></td>
             </tr>
             <tr>
                 <td><h5 class='normal-font'>Amount paid:</h5></td>
-                <td><h5>@User.UserSurname</h5></td>
+                <td><h5>@Database.UserReturn(User).UserFine</h5></td>
             </tr>
             <tr>
                 <td><h5 class='normal-font'>Date:</h5></td>
-                <td><h5>@User.UserPostcode</h5></td>
+                <td><h5>31/09/2021</h5></td>
             </tr>
 
         </table>
 
     </div>
+
     <br>
     <br>
-    Your payment was successful.
-    A confirmation email was sent to your email address
+    <p>Your payment was successful.A confirmation email was sent to your email address</p>
 </div>

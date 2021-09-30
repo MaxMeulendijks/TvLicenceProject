@@ -2,12 +2,27 @@
 @inject NavigationManager UriHelper
 @using TvLicenceProject.Data
 @inject UserInfo User
+@inject UserDatabase Database
 
-<div class="govuk-width-container highlight1">
+
+<h3> User details: </h3>
+<br>
+<h5>Surname: </h5> 
+<p>@Database.UserReturn(User).UserSurname</p>
+<br>
+<h5>Tv Licence Number: </h5> 
+<p>@Database.UserReturn(User).LicenceNumber</p>
+<br>
+<h5>Fine Amount:</h5>
+<h2>£ @Database.FineReturn(User)</h2>
+<br>
+
+
+<div class="govuk-width-container">
   <br>
   <h1>Enter card details</h1>
   <br>
-  <div class="highlight2">
+  <div>
     <EditForm Model=@User>
 
       <h5>Card number</h5>
@@ -64,7 +79,7 @@
       <InputText id="BillingCity" class="payment-form pad-down halflength" @bind-Value=User.BillingCity />
       <br>
       <h5>Postcode</h5>
-      <InputText id="BillingPostCode" class="payment-form postcode" @bind-Value=User.BillingPostcode />
+      <InputText id="BillingPostCode" class="payment-form cscnumber" @bind-Value=User.BillingPostcode />
 
       <br>
       <h5>Email</h5>
@@ -78,20 +93,18 @@
       <blockquote class="fulllength">
         An email will be sent to:
         <br>
-        <b>@User.BillingEmail</b>
+        <b>'Add Update when typed: Email Address'</b>
       </blockquote>
 
       <br>
 
       <button class="govuk-button" type="submit" value="submit" @onclick=@Navigate>Continue</button>
-    </EditForm>  
-    <br>
-    <a href='/'>Cancel payment</a>
+    </EditForm>
   </div>
+  <br>
 
 
-
-    
+    <a href='/'>Cancel payment</a>
 
     <br>
     <br>
@@ -107,3 +120,5 @@
 }
 
 }
+
+>>>>>>> main

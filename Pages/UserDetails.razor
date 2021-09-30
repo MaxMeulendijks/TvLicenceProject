@@ -1,7 +1,10 @@
+
 @page "/userdetails"
 @inject NavigationManager UriHelper
 @using TvLicenceProject.Data
 @inject UserInfo User
+@inject UserDatabase Database
+
 
 <div class="govuk-width-container">
   <br>
@@ -13,7 +16,9 @@
   <br>
   <br>
 
-  <EditForm Model=@User>
+  <EditForm Model=@User OnValidSubmit="@Navigate">
+  <DataAnnotationsValidator />
+  <ValidationSummary />
     
       <h5>Court Division</h5>
       <InputText id="CourtDivision" class="fulllength" @bind-Value=User.CourtDivision />
@@ -41,7 +46,7 @@
       <br>
  
 
-    <button class="govuk-button" type="submit" value="submit" @onclick=@Navigate>Submit details</button>
+    <button class="govuk-button" type="submit" value="submit">Submit details</button>
   </EditForm>
   <br>
 
@@ -51,16 +56,13 @@
   <br>
 </div>
 
-
-@code
-{
-  
-}
-
-
 @code {
-void Navigate()
-{
-    UriHelper.NavigateTo("financedetails");
+        void Navigate()
+        {
+
+        string NotFound = "These user details could not be found, please check details.";
+
+        UriHelper.NavigateTo("financedetails");
+      }
 }
-}
+
