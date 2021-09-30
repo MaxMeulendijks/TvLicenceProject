@@ -65,7 +65,7 @@ namespace TvLicenceProject.Data
             }
 
 
-            public int UserReturn (UserInfo User)
+            public UserInfo UserReturn (UserInfo User)
             {
                 
                 CompareCourtDivision compareCourt = new CompareCourtDivision();
