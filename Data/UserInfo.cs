@@ -4,9 +4,18 @@ namespace TvLicenceProject.Data
 {
     public class UserInfo
     {
+        [Required]
+        [StringLength(8, MinimumLength = 0, ErrorMessage = "Court division should either be {1} characters, or not filled in.")]
         public string CourtDivision {get; set;}
+
+        [Required]
+        [StringLength(8, MinimumLength = 0, ErrorMessage = "Account number should either be {1} characters, or not filled in.")]
         public string AccountNumber {get; set;}
+
+        [Required]
+        [StringLength(10, ErrorMessage = "Tv Licence number should either be {1} characters long.")]
         public string LicenceNumber {get; set;}
+        
         public string UserSurname {get; set;}
         public string UserPostcode {get; set;}
 
