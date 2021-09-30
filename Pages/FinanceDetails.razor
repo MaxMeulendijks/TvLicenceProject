@@ -6,9 +6,9 @@
 
 
 <h3> Let's check the fine! </h3>
-@User.UserSurname
-@User.LicenceNumber
-@Database.CheckPresence(User)
+@Database.UserReturn(User).UserSurname
+@Database.UserReturn(User).LicenceNumber
+@Database.FineReturn(User)
 
 <div class="govuk-width-container">
   <br>
