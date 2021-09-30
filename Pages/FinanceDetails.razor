@@ -2,6 +2,12 @@
 @inject NavigationManager UriHelper
 @using TvLicenceProject.Data
 @inject UserInfo User
+@inject UserDatabase Database
+
+<h3> Let's check the fine! </h3>
+@User.UserSurname
+@User.LicenceNumber
+@Database.CheckPresence(User)
 
 <div class="govuk-width-container">
   <br>
