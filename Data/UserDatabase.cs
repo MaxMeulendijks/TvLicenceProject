@@ -7,6 +7,7 @@ namespace TvLicenceProject.Data
 {
     public class UserDatabase
     {
+
         List<UserInfo> DataEntries = new List<UserInfo>();
 
 
@@ -57,14 +58,12 @@ namespace TvLicenceProject.Data
                 {
                     if(compareCourt.Equals(User, ui)==true)
                     {
-                        
                         return ui.UserFine;
                     }
                 }
 
                 return -1;
             }
-
 
             public UserInfo UserReturn (UserInfo User)
             {
@@ -82,6 +81,7 @@ namespace TvLicenceProject.Data
                 }
                 return False;
             }
+
     }
 
     public class CompareCourtDivision : IEqualityComparer<UserInfo>
