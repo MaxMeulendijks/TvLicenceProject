@@ -67,6 +67,7 @@ namespace TvLicenceProject.Data
 
             public UserInfo UserReturn (UserInfo User)
             {
+                CheckPresence(User)
                 UserInfo False = new UserInfo();
                 CompareCourtDivision compareCourt = new CompareCourtDivision();
 

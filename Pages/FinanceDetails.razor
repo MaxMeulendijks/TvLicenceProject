@@ -5,11 +5,16 @@
 @inject UserDatabase Database
 
 
-<h3> Let's check the fine! </h3>
-@Database.CheckPresence(User)
-@Database.UserReturn(User).UserSurname
-@Database.UserReturn(User).LicenceNumber
-@Database.FineReturn(User)
+<h3> User details: </h3>
+<br>
+<h5>Surname: </h5> @Database.UserReturn(User).UserSurname
+<br>
+<h5>Tv Licence Number: </h5> @Database.UserReturn(User).LicenceNumber
+<br>
+<h5>Fine Amount:
+<br>
+<h2>@Database.FineReturn(User)</h2>
+<br>
 
 <div class="govuk-width-container">
   <br>
