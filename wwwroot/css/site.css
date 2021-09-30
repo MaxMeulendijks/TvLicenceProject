@@ -84,12 +84,12 @@ a, .btn-link {
 }
 
 .fulllength{
-    /* width: 280px; */
-    width:50%;
+    width: 600px;
+    /* width:50%; */
 }
 
 .halflength{
-    width:25%;
+    width:300px;
 }
 
 .dateComp{
@@ -98,6 +98,10 @@ a, .btn-link {
 
 .cscnumber{
     width:80px;
+}
+
+.postcode{
+    width:100px;
 }
 
 .payment-form, #CourtDivision, input[type="text"], input[type="email"], input[type="number"], input[type="tel"], input[type="search"], input[type="url"], input[type="password"] {
@@ -182,6 +186,22 @@ h1 a:hover{
     color: white;
 }
 
+.highlight1{
+    background-color:green;
+    
+}
+
+
+.highlight2{
+    background-color:red;
+    
+}
+
+
+.highlight3{
+    background-color:blue;
+    
+}
 /* tr.separated td, td {
     set border style for separated rows
     border-bottom: 1px solid rgb(121, 121, 121);

@@ -3,11 +3,11 @@
 @using TvLicenceProject.Data
 @inject UserInfo User
 
-<div class="govuk-width-container">
+<div class="govuk-width-container highlight1">
   <br>
   <h1>Enter card details</h1>
   <br>
-  <div>
+  <div class="highlight2">
     <EditForm Model=@User>
 
       <h5>Card number</h5>
@@ -64,7 +64,7 @@
       <InputText id="BillingCity" class="payment-form pad-down halflength" @bind-Value=User.BillingCity />
       <br>
       <h5>Postcode</h5>
-      <InputText id="BillingPostCode" class="payment-form cscnumber" @bind-Value=User.BillingPostcode />
+      <InputText id="BillingPostCode" class="payment-form postcode" @bind-Value=User.BillingPostcode />
 
       <br>
       <h5>Email</h5>
@@ -84,12 +84,14 @@
       <br>
 
       <button class="govuk-button" type="submit" value="submit" @onclick=@Navigate>Continue</button>
-    </EditForm>
-  </div>
-  <br>
-
-
+    </EditForm>  
+    <br>
     <a href='/'>Cancel payment</a>
+  </div>
+
+
+
+    
 
     <br>
     <br>
