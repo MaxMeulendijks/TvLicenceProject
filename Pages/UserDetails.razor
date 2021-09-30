@@ -28,6 +28,9 @@ Please enter your user details.
   <label for="UserPostcode">Postcode</label>
   <InputText id="CourtDivision" @bind-Value=User.UserPostcode />
 </ul>
+<ul>
+  @NotFound
+</ul>
 
   <button class="govuk-button" type="submit" value="submit" @onclick=@Navigate>Submit details</button>
 </EditForm>
@@ -46,6 +49,15 @@ Please Fill out user details:
 @code {
 void Navigate()
 {
+
+  string NotFound = "These user details could not be found, please check details.";
+
+  if(CheckPresence(User)==-1)
+  {
+
+  }else{
     UriHelper.NavigateTo("financedetails");
+  }
+    
 }
 }
