@@ -14,7 +14,7 @@ namespace TvLicenceProject.Data
         public string AccountNumber {get; set;}
 
         [Required]
-        [StringLength(10, ErrorMessage = "Tv Licence number should either be {1} characters long.")]
+        [StringLength(10, ErrorMessage = "Tv Licence number should be {1} characters long.")]
         public string LicenceNumber {get; set;}
         
         public string UserSurname {get; set;}

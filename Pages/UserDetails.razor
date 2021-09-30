@@ -10,6 +10,7 @@ Please enter your user details.
 
 <EditForm Model=@User OnValidSubmit="@Navigate">
 <DataAnnotationsValidator />
+<ValidationSummary />
 <ul>
   <label for="CourtDivision">Court Division</label>
   <InputText id="CourtDivision" @bind-Value=User.CourtDivision />
