@@ -82,6 +82,13 @@ using TvLicenceProject.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "J:\Documents\Code\TVLicenceProject\TvLicenceProject\Pages\PaymentReceipt.razor"
+using TvLicenceProject.Data;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/paymentreceipt")]
     public partial class PaymentReceipt : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -90,6 +97,7 @@ using TvLicenceProject.Shared;
         {
         }
         #pragma warning restore 1998
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private UserInfo User { get; set; }
     }
 }
 #pragma warning restore 1591

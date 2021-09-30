@@ -16,7 +16,7 @@
     background-color: #000000;
     border-bottom: 1px solid #000000;
     justify-content: flex;
-    height: 3.5rem;
+    height: 4.5rem;
     display: flex;
     align-items: center;
     text-align: left;
@@ -88,4 +88,13 @@
     margin-bottom: -10px;
     padding-top: 10px;
     border-bottom: 10px solid #1d70b8;
+}
+
+
+.govuk-header_container[b-tbuslxnufd] {
+    padding: 20px;
+
+    margin-left: 100px;
+    max-width: 100px;
+
 }

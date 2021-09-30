@@ -172,14 +172,23 @@ a {
     text-decoration: underline;
 }
 
-
-tr.separated td, td {
-    /* set border style for separated rows */
-    border-bottom: 1px solid rgb(121, 121, 121);
-} 
-
-table {
-    /* make the border continuous (without gaps between columns) */
-    border-collapse: collapse;
+h1 a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
 }
+
+h1 a:hover{
+    color: white;
+}
+
+/* tr.separated td, td {
+    set border style for separated rows
+    border-bottom: 1px solid rgb(121, 121, 121);
+}  */
+
+/* table {
+    make the border continuous (without gaps between columns)
+    border-collapse: collapse;
+} */
 
