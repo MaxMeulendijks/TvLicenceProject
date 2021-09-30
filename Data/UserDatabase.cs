@@ -57,6 +57,7 @@ namespace TvLicenceProject.Data
                 {
                     if(compareCourt.Equals(User, ui)==true)
                     {
+                        
                         return ui.UserFine;
                     }
                 }
