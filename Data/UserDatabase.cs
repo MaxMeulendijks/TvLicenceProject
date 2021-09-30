@@ -67,7 +67,7 @@ namespace TvLicenceProject.Data
 
             public UserInfo UserReturn (UserInfo User)
             {
-                
+                UserInfo False = new UserInfo();
                 CompareCourtDivision compareCourt = new CompareCourtDivision();
 
                 foreach(UserInfo ui in DataEntries)
@@ -76,6 +76,7 @@ namespace TvLicenceProject.Data
                     {
                         return ui;
                     }
+                    return False;
                 }
 
             }
