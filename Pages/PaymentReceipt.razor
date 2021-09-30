@@ -1,14 +1,18 @@
 @page "/paymentreceipt"
+@using TvLicenceProject.Data
+@inject UserInfo User
+@inject UserDatabase Database
+
 <div  class="govuk-width-container">
     <h1>Payment complete</h1>
     <br>
     <br>
     <br>
-    Payment Reference number:
+    Payment Reference number: 12345678910
     <br> 
-    Amount paid:
+    Amount paid: £ @Database.UserReturn(User).UserFine
     <br>
-    Date: 
+    Date:  31/09/2021
     <br>
     <br>
     <br>

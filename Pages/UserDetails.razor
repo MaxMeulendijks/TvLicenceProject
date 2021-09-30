@@ -1,8 +1,10 @@
+
 @page "/userdetails"
 @inject NavigationManager UriHelper
 @using TvLicenceProject.Data
 @inject UserInfo User
 @inject UserDatabase Database
+
 
 <div class="govuk-width-container">
   <br>
@@ -54,16 +56,13 @@
   <br>
 </div>
 
-
-@code
-{
-  
-}
-
-
 @code {
-void Navigate()
-{
-    UriHelper.NavigateTo("financedetails");
+        void Navigate()
+        {
+
+        string NotFound = "These user details could not be found, please check details.";
+
+        UriHelper.NavigateTo("financedetails");
+      }
 }
-}
+
