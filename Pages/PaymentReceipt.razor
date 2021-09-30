@@ -1,15 +1,31 @@
 @page "/paymentreceipt"
+@using TvLicenceProject.Data
+@inject UserInfo User
 <div  class="govuk-width-container">
-    <h1>Payment complete</h1>
+  <br>
+  <h1>Payment complete</h1>
     <br>
     <br>
-    <br>
-    Payment Reference number:
-    <br> 
-    Amount paid:
-    <br>
-    Date: 
-    <br>
+      <div id='gray-back' class='fulllength'>
+        <table>
+            @* <hr style="width:100%; text-align:left; margin-left:0"> *@
+            <tr class="separated">
+                
+                <td><h5 class='normal-font'>Payment Reference number:</h5></td>
+                <td><h5>@User.LicenceNumber</h5></td>
+            </tr>
+            <tr>
+                <td><h5 class='normal-font'>Amount paid:</h5></td>
+                <td><h5>@User.UserSurname</h5></td>
+            </tr>
+            <tr>
+                <td><h5 class='normal-font'>Date:</h5></td>
+                <td><h5>@User.UserPostcode</h5></td>
+            </tr>
+
+        </table>
+
+    </div>
     <br>
     <br>
     Your payment was successful.
