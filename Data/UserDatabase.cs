@@ -9,6 +9,10 @@ namespace TvLicenceProject.Data
     {
         List<UserInfo> DataEntries = new List<UserInfo>();
 
+
+            public bool CheckPresence (UserInfo User)
+            {
+
                 UserInfo Emily = new UserInfo();
                 Emily.CourtDivision = "C1";
                 Emily.UserSurname = "Bloggs";
@@ -29,9 +33,6 @@ namespace TvLicenceProject.Data
                 Margret.LicenceNumber = "12345678";
                 Margret.UserFine = 0;
                 DataEntries.Add(Margret);
-
-            public bool CheckPresence (UserInfo User)
-            {
                 
                 CompareCourtDivision compareCourt = new CompareCourtDivision();
 
