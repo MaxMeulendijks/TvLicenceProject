@@ -30,7 +30,7 @@ Please enter your user details.
   <InputText id="CourtDivision" @bind-Value=User.UserPostcode />
 </ul>
 <ul>
-  @NotFound
+  @NotFound.Display
 </ul>
 
   <button class="govuk-button" type="submit" value="submit" @onclick=@Navigate>Submit details</button>
