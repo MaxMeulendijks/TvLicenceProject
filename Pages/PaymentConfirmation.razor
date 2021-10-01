@@ -1,0 +1,60 @@
+@page "/paymentconfirmation"
+@inject NavigationManager UriHelper
+@using TvLicenceProject.Data
+@inject UserInfo User
+<div class='govuk-width-container '>
+    <br>
+    <h1>Confirm your payment</h1>
+    <br>
+    <br>
+
+    <div id='gray-back' class='fulllength'>
+        <table>
+            @* <hr style="width:100%; text-align:left; margin-left:0"> *@
+            <tr class="separated">
+                
+                <td><h5 class='normal-font'>TV Licence Number:</h5></td>
+                <td><h5>@User.LicenceNumber</h5></td>
+            </tr>
+            <tr>
+                <td><h5 class='normal-font'>Surname:</h5></td>
+                <td><h5>@User.UserSurname</h5></td>
+            </tr>
+            <tr>
+                <td><h5 class='normal-font'>Postcode:</h5></td>
+                <td><h5>@User.UserPostcode</h5></td>
+            </tr>
+            <tr>
+                <td><h5 class='normal-font'>Name on Card:</h5></td>
+                <td><h5>@User.CardName</h5></td>
+            </tr>
+            <tr>
+                <td><h5 class='normal-font'>Card Number:</h5></td>
+                <td><h5>@User.CardNumber</h5></td>
+            </tr>
+            <tr>
+                <td><h5 class='normal-font'>Email Address:</h5></td>
+                <td><h5>@User.BillingEmail</h5></td>
+            </tr> 
+
+        </table>
+
+    </div>
+
+    <br>
+
+
+    <button id='p' class="govuk-button" @onclick=@Navigate>Confirm Payment</button>
+
+    <br>
+    <br>
+
+    <a id='p' href='/'>Cancel payment</a>
+</div>
+
+@code {
+void Navigate()
+{
+    UriHelper.NavigateTo("paymentreceipt");
+}
+}

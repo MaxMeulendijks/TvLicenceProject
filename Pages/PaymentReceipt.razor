@@ -1,0 +1,49 @@
+@page "/paymentreceipt"
+@using TvLicenceProject.Data
+@inject UserInfo User
+@inject NavigationManager UriHelper
+@inject UserDatabase Database
+
+<div  class="govuk-width-container">
+  <br>
+  <h1>Payment complete</h1>
+    <br>
+    <br>
+      <div id='gray-back' class='fulllength'>
+        <table>
+            @* <hr style="width:100%; text-align:left; margin-left:0"> *@
+            <tr class="separated">
+                
+                <td><h5 class='normal-font'>Payment Reference number:</h5></td>
+                <td><h5>12345678910</h5></td>
+            </tr>
+            <tr>
+                <td><h5 class='normal-font'>Amount paid:</h5></td>
+                <td><h5>£@Database.UserReturn(User).UserFine</h5></td>
+            </tr>
+            <tr>
+                <td><h5 class='normal-font'>Date:</h5></td>
+                <td><h5>01/10/2021</h5></td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <br>
+    <br>
+    <p><b>Your payment was successful.</b></p>
+    <p>A confirmation email has been sent to <b>@User.BillingEmail</b></p>
+    <p>Click on finish to return to main webpage.</p>
+
+
+    <button id='p' class="govuk-button" @onclick=@Navigate>Finish</button>
+
+</div>
+
+@code {
+void Navigate()
+{
+    UriHelper.NavigateTo("/");
+}
+}

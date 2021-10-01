@@ -28,6 +28,8 @@ namespace TvLicenceProject
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
+            services.AddSingleton<UserInfo>();
+            services.AddSingleton<UserDatabase>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,0 +1,68 @@
+
+@page "/userdetails"
+@inject NavigationManager UriHelper
+@using TvLicenceProject.Data
+@inject UserInfo User
+@inject UserDatabase Database
+
+
+<div class="govuk-width-container">
+  <br>
+
+  <h1>Enter User Details</h1>
+  
+  <br>
+  <p>Please enter your user details.</p>
+  
+  
+
+  <EditForm Model=@User OnValidSubmit="@Navigate">
+  <DataAnnotationsValidator />
+  <ValidationSummary />
+    
+      <h5>Court Division</h5>
+      <InputText id="CourtDivision" class="fulllength" @bind-Value=User.CourtDivision />
+
+      <br>
+
+      <h5>Account Number</h5>
+      <InputText id="CourtDivision" class="fulllength" @bind-Value=User.AccountNumber />
+
+      <br>
+    
+      <h5>TV Licence Number</h5>
+      <InputText id="CourtDivision" class="fulllength" @bind-Value=User.LicenceNumber />
+
+      <br>
+    
+      <h5>Surname</h5>
+      <InputText id="CourtDivision" class="fulllength" @bind-Value=User.UserSurname />
+
+      <br>
+
+      <h5>Postcode</h5>
+      <InputText id="CourtDivision" class="halflength" @bind-Value=User.UserPostcode />
+
+      <br>
+ 
+
+    <button id='p' class="govuk-button" type="submit" value="submit">Submit details</button>
+  </EditForm>
+  <br>
+
+  <a id='p' href='/'>Cancel payment</a>
+
+  <br>
+  <br>
+</div>
+
+@code {
+        void Navigate()
+        {
+
+        string NotFound = "These user details could not be found, please check details.";
+
+        UriHelper.NavigateTo("financedetails");
+      }
+}
+

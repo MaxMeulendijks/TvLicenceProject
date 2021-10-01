@@ -1,0 +1,38 @@
+@page "/"
+@inject NavigationManager UriHelper
+
+<div class="govuk-width-container">
+    <br>
+    <h1>Pay a TV Licence Fine</h1>
+
+    <br>
+
+   <p> You can use this service to pay the following in Northern Ireland:</p>
+
+    <br>
+        <p>- TV licence fines</p>
+    
+    <br>
+    <p>There are different services for paying offender levies and unlicensed use compensation.</p>
+    <p>The process is different in England, Scotland and Wales.</p>
+    
+    <br>
+    <h3>Need to have...</h3>
+    <ul>
+        <li id='p' >Notice of fine document</li>
+        <li id='p' >debit/credit card</li>
+    </ul>
+    <a id='p' href="">> Lost your notice of fine document?</a>
+    <br>
+    <br>
+    <br>
+
+    <button id='p' class="govuk-button" @onclick=@Navigate>Pay Fine</button>
+</div>
+
+@code {
+void Navigate()
+{
+    UriHelper.NavigateTo("userdetails");
+}
+}

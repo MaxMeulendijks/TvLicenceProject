@@ -1,0 +1,127 @@
+@page "/financedetails"
+@inject NavigationManager UriHelper
+@using TvLicenceProject.Data
+@inject UserInfo User
+@inject UserDatabase Database
+
+
+
+
+<div class="govuk-width-container float-parent">
+  <br>
+  <h1>Enter card details</h1>
+  <br>
+  <div class='float-child1'>
+    <EditForm Model=@User>
+
+      <h5>Card number</h5>
+      @* <label for="CardNumber">Card number</label>  *@
+   
+      <InputText id="CardNumber" class="payment-form fulllength" @bind-Value=User.CardNumber />
+    
+
+      <br>
+
+      <h5>Expiry date</h5>
+   
+      <p>For example. 10/20</p>
+    
+    
+      <label id='p' for="ExpiryMonth">Month</label>
+      <span id="span"></span>
+      <label id='p' for="ExpiryYear">Year</label>
+      <br>
+   
+      <InputText id="ExpiryMonth" class="payment-form dateComp" @bind-Value=User.ExpiryMonth />
+      /
+      <InputText id="ExpiryYear" class="payment-form dateComp" @bind-Value=User.ExpiryYear />
+      
+      <br>
+      <br>
+
+      <h5>Name on card</h5>
+     
+      <InputText id="CardName" class="payment-form fulllength" @bind-Value=User.CardName />
+      <br>
+    
+      <h5>Card security code</h5>
+
+      <p>The last 3 digits on the back of the card</p>
+    
+      <InputText id="CardSecurity" class="payment-form cscnumber" @bind-Value=User.CardSecurity />
+      
+      <br>
+      <br>
+
+
+      <h3>Billing Address</h3> 
+      <p> This is the address associated with the card</p>
+  
+      <h5>Building address or name and street</h5>
+   
+      <InputText id="BillingStreet" class="payment-form pad-down fulllength" @bind-Value=User.BillingStreet />
+      <InputText id="BillingStreet" class="payment-form fulllength" @bind-Value=User.BillingStreet />
+
+      <br>
+
+      <h5>City</h5>
+      <InputText id="BillingCity" class="payment-form pad-down halflength" @bind-Value=User.BillingCity />
+      <br>
+      <h5>Postcode</h5>
+      <InputText id="BillingPostCode" class="payment-form postcode" @bind-Value=User.BillingPostcode />
+
+      <br>
+      <h5>Email</h5>
+
+      <p>We'll send your billing confirmation here</p>
+    
+      <InputText id="BillingEmail" class="payment-form fulllength" onchange=User.BillingEmail @bind-Value=User.BillingEmail />
+
+      <br>  
+
+      <blockquote class="fulllength">
+        <p>An email will be sent to:</p>
+        
+        <b>@User.BillingEmail</b>
+      </blockquote>
+
+      <br>
+
+      <button id='p' class="govuk-button" type="submit" value="submit" @onclick=@Navigate>Continue</button>
+    </EditForm>
+    <br>
+    <a id='p' href='/'>Cancel payment</a> 
+    <br>
+    <br>
+  </div>
+  
+
+   
+    
+  <div class='float-child2 '>
+    <h3> User details: </h3>
+    <br>
+    <h5>Surname: </h5> 
+    <p>@Database.UserReturn(User).UserSurname</p>
+    <br>
+    <h5>Tv Licence Number: </h5> 
+    <p>@Database.UserReturn(User).LicenceNumber</p>
+    <br>
+    <h5>Fine Amount:</h5>
+    <h2>£@Database.FineReturn(User)</h2>
+    <br>
+  </div>
+</div>
+
+@code
+{
+  
+  
+  void Navigate()
+{
+    UriHelper.NavigateTo("paymentconfirmation");
+}
+
+}
+
+
